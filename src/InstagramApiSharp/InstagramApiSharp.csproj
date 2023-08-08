@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;uap10.0;net461</TargetFrameworks>
-    <VersionPrefix>1.7.6</VersionPrefix>
+    <VersionPrefix>1.7.7</VersionPrefix>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <AssemblyName>Bman46InstagramApiSharpLabs</AssemblyName>
     <PackageId>Bman46InstagramApiSharpLabs</PackageId>
@@ -11,9 +11,9 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.7.6.0</Version>
-    <AssemblyVersion>1.7.6.0</AssemblyVersion>
-    <FileVersion>1.7.6.0</FileVersion>
+    <Version>1.7.7.0</Version>
+    <AssemblyVersion>1.7.7.0</AssemblyVersion>
+    <FileVersion>1.7.7.0</FileVersion>
     <Description>A complete Private Instagram API for .NET.
 
 
@@ -38,7 +38,17 @@ See example projects and wiki pages to find out how this library works.</Descrip
     <RepositoryType></RepositoryType>
     <RepositoryUrl>https://github.com/bman46/InstagramApiSharp/</RepositoryUrl>
     <PackageProjectUrl>https://github.com/bman46/InstagramApiSharp/</PackageProjectUrl>
-    <PackageReleaseNotes>v1.7.1
+    <PackageReleaseNotes>v1.7.7
+- [Bugfix] for ChangePasswordAsync ( thx to @behi1ty for report )
+- [Add] checkpoint required error ( thx to @bman46 )
+- [Update] GenerateUploadId
+- [Update] GetUserMedia... URI
+- [Tiny update] for ChallengeLoginInfo/TwoFactorLoginInfo
+
+v1.7.2
+- [Update] TwoFactorLoginAsync ( thx to @bman46 )
+
+v1.7.1
 - [Bugfix] for GetUserMediaAsync, GetUserMediaByIdAsync [ thx to @bynifaciy ]
 - [Bugfix] for GetUserAsync
 - [Bugfix] for GetDirectInboxThreadAsync
@@ -282,7 +292,7 @@ v1.3.3.0
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" Condition="'$(TargetFramework)' == 'uap10.0'" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" Condition="'$(TargetFramework)' == 'net461'" />
